@@ -1,0 +1,124 @@
+$primary: #596CD9;
+$secondary: #262626;
+$tertiary: #D7D7D9;
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/font/Roboto-Light.ttf);
+}
+
+.log{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+.title{
+    text-align: center;
+}
+
+p{
+    font-family: 'Roboto';
+}
+
+.imgAnimal{
+    width: 400px;
+    height: 300px;
+    padding: auto;
+    margin: auto;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 100px;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    text-align: justify;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 100px;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    text-align: justify;
+}
+
+body{
+    background-color: $tertiary;
+}
+
+
+canvas {
+    position: absolute;
+    top: -15px;
+    z-index: 1;
+    right: 10px;
+}
+
+svg{
+    position: absolute;
+    right: 545px;
+    top: 15px;
+}
+
+.container {
+    text-align: center;
+}
+
+button {
+    width: 70px;
+    height: 30px;
+    background-color: white;
+    border: transparent;
+}
+
+.btn {
+    text-align: left;
+
+}
+
+video {
+    width: 90vw;
+    height: 90vh;
+}
+
+@media screen and (max-width: 360px) {
+    body{
+        max-width: 360px;
+    }
+
+    p{
+        max-width: 300px;
+        font-size: 12px;
+    }
+
+    .content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .imgAnimal{
+        width: 250px;
+        height: 200px;
+        padding: auto;
+        margin: auto;
+    }
+
+    canvas {
+        position: absolute;
+        top: -65px;
+        z-index: 0;
+        right: 10px;
+    }
+    
+    svg{
+        position: absolute;
+        right: 90px;
+        top: 15px;
+    }
+}
