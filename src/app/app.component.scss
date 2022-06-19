@@ -7,6 +7,15 @@ $tertiary: #D7D7D9;
     src: url(../assets/font/Roboto-Light.ttf);
 }
 
+@font-face {
+    font-family: Calistoga;
+    src: url(../assets/font/Calistoga-Regular.ttf);
+}
+
+h3{
+    font-family: 'Calistoga';
+}
+
 .log{
     width: 100px;
     height: 100px;
@@ -39,26 +48,8 @@ p{
     text-align: justify;
 }
 
-.contenedor{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 100px;
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
-    text-align: justify;
-}
-
 body{
     background-color: $tertiary;
-}
-
-
-canvas {
-    position: absolute;
-    top: -15px;
-    z-index: 1;
-    right: 10px;
 }
 
 svg{
@@ -84,17 +75,18 @@ button {
 }
 
 video {
-    width: 90vw;
-    height: 90vh;
+    width: 55vw;
+    height: 65vh;
 }
 
-@media screen and (max-width: 360px) {
-    body{
-        max-width: 360px;
-    }
+svg{
+    position: absolute;
+    top: 385px;
+    right: 0;
+}
 
+@media screen and (max-width: 740px) {
     p{
-        max-width: 300px;
         font-size: 12px;
     }
 
@@ -109,16 +101,10 @@ video {
         margin: auto;
     }
 
-    canvas {
-        position: absolute;
-        top: -65px;
-        z-index: 0;
-        right: 10px;
-    }
     
     svg{
         position: absolute;
-        right: 90px;
-        top: 15px;
+        top: -385px;
+        right: 0;
     }
 }

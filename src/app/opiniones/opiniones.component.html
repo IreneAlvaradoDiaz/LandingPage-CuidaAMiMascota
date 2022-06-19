@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Opiniones de uso de personas encuestadas, ¿Lo usarían?</h3>
+    <div>
+        <canvas id="myChart" width="200px" height="300px"></canvas>
+    </div>
+    <svg width="140" height="180">
+        <circle  cx="70" cy="95" r="50" stroke="black" fill="none" />
+        <circle cx="55" cy="80" r="5" stroke="black" fill="#393" />
+        <circle cx="85" cy="80" r="5" stroke="black" fill="#393" />
+        <g id="right-whiskers">
+          <line x1="75" y1="95" x2="135" y2="85" stroke="black" />
+          <line x1="75" y1="95" x2="135" y2="105" stroke="black" />
+        </g>
+        <use xlink:href="#right-whiskers" transform="scale(-1 1) translate(-140 0)" />
+        <polyline points="108 62, 90 10, 70 45, 50 10, 32 62" stroke="black" fill="none" />
+        <polyline points="35 110, 45 120, 95 120, 105 110" stroke="black" fill="none" />
+        <path d="M 75 90 L 65 90 A 5 10 0  0 0 75 90" stroke="black" fill="#fcc" />
+        <g id="tongue">
+          <path d="M 80 120 L 60 120 A 5 10 0  0 0 80 120" stroke="black" fill="#fcc" />
+          <line x1="70" y1="120" x2="70" y2="130" stroke="black"  />
+        </g>
+    </svg>
+      
+</body>
+</html>
