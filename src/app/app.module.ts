@@ -9,6 +9,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { GaleryComponent } from './gallery/gallery.component';
 import { OpinionesComponent } from './opiniones/opiniones.component';
 import {ButtonModule} from 'primeng/button';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import {ButtonModule} from 'primeng/button';
     BrowserModule,
     ButtonModule,
     TabMenuModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],

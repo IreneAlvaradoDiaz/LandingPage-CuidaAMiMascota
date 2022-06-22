@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Chart, registerables } from 'chart.js';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-opiniones',
@@ -10,6 +11,8 @@ export class OpinionesComponent implements OnInit {
 
   chart: any = "";
   data: any = "";
+  img = environment.URL;
+  
   constructor() { }
 
   ngOnInit(): void {
